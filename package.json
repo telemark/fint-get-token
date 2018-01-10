@@ -4,7 +4,7 @@
   "description": "Module for retreiving a token from FINT",
   "main": "index.js",
   "bin": {
-    "fint-get-token": "./bin/fint-get-token"
+    "fint-get-token": "./bin/fint-get-token.js"
   },
   "files": [
     "index.js",
