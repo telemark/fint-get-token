@@ -1,0 +1,54 @@
+{
+  "name": "fint-get-token",
+  "version": "1.0.0",
+  "description": "Module for retreiving a token from FINT",
+  "main": "index.js",
+  "bin": {
+    "fint-get-token": "./bin/fint-get-token"
+  },
+  "files": [
+    "index.js",
+    "bin"
+  ],
+  "scripts": {
+    "test": "standard && nsp check && ava",
+    "test-offline": "standard && ava",
+    "coverage": "nyc ava",
+    "coveralls": "nyc ava && nyc report --reporter=lcov && cat coverage/lcov.info | coveralls",
+    "standard-fix": "standard --fix"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Jonas Maccyber Enge",
+    "email": "jonas.enge@gmail.com",
+    "url": "https://github.com/maccyber"
+  },
+  "contributors": [
+    {
+      "name": "Geir Gåsodden",
+      "email": "geir.gasodden@pythonia.no",
+      "url": "https://github.com/zrrrzzt"
+    }
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/telemark/fint-get-token.git"
+  },
+  "bugs": {
+    "url": "https://github.com/telemark/fint-get-token/issues"
+  },
+  "homepage": "https://github.com/telemark/fint-get-token#readme",
+  "dependencies": {
+    "args": "3.0.8",
+    "request": "2.83.0",
+    "request-promise": "4.2.2"
+  },
+  "devDependencies": {
+    "ava": "0.24.0",
+    "coveralls": "3.0.0",
+    "nsp": "3.1.0",
+    "nyc": "11.4.1",
+    "standard": "10.0.3"
+  }
+}
