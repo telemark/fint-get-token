@@ -6,7 +6,7 @@ module.exports = async options => {
     throw Error('Missing required input: options')
   }
   if (!options.url) {
-    throw Error('Missing required input: url')
+    throw Error('Missing required input: options.url')
   }
   if (!options.credentials) {
     throw Error('Missing required input: options.credentials')
@@ -15,19 +15,19 @@ module.exports = async options => {
     throw Error('Missing required input: options.credentials.auth')
   }
   if (!options.credentials.auth.username) {
-    throw Error('Missing required input: username')
+    throw Error('Missing required input: options.credentials.auth.username')
   }
   if (!options.credentials.auth.password) {
-    throw Error('Missing required input: password')
+    throw Error('Missing required input: options.credentials.auth.password')
   }
   if (!options.credentials.client) {
     throw Error('Missing required input: options.credentials.client')
   }
   if (!options.credentials.client.client_id) {
-    throw Error('Missing required input: client_id')
+    throw Error('Missing required input: options.credentials.client.client_id')
   }
   if (!options.credentials.client.client_secret) {
-    throw Error('Missing required input: client_secret')
+    throw Error('Missing required input: options.credentials.client.client_secret')
   }
 
   const { url, credentials } = options
