@@ -23,6 +23,12 @@ npx fint-get-token -c 6e1cf7b4-b107-42b3-9435-8fda70726c6a -C 6y4FUuP9BfAXeVqguN
 | -U, --url           | OAuth2 url (optional)     |
 | -u, --username      | username                  |
 
+Returns only the token
+
+```bash
+eyJhbGciOiJBM.GpS0mMTtaUfnr6S7.qfS1ugEixs2C41MKUUg.MKvz789QPL-1C15J6kVQQw
+```
+
 ## Use as node module
 
 Install fint-get-token
@@ -55,6 +61,16 @@ getToken(options)
   }).catch(error => {
     console.error(error)
   })
+```
+
+Returns
+
+```JavaScript
+{ 
+  access_token: 'eyJhbGciOiJBM.GpS0mMTtaUfnr6S7.qfS1ugEixs2C41MKUUg.MKvz789QPL-1C15J6kVQQw',
+  token_type: 'bearer',
+  expires_in: 3599 
+}
 ```
 
 ## Get token and data

@@ -4,13 +4,17 @@ const args = require('args')
 const getToken = require('../index')
 
 args
-  .option('username', 'username')
-  .option('password', 'password')
-  .option('client-id', 'OAuth2 client id')
-  .option('client-secret', 'OAuth2 client secret')
+  .option('username', 'username (required)')
+  .option('password', 'password (required)')
+  .option('client-id', 'OAuth2 client id (required)')
+  .option('client-secret', 'OAuth2 client secret (required)')
   .option('url', 'OAuth2 url', 'https://namidp01.rogfk.no/nidp/oauth/nam/token')
 
 const flags = args.parse(process.argv)
+
+if (!flags.username || !flags.password || !flags.clientId || !flags.clientSecret) {
+  args.showHelp()
+}
 
 const options = {
   url: flags.url,
@@ -29,7 +33,7 @@ const options = {
 
 getToken(options)
   .then(token => {
-    console.log(token)
+    console.log(token.access_token)
   }).catch(error => {
     console.error(error.message)
   })
