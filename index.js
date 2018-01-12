@@ -1,4 +1,4 @@
-const rp = require('request-promise')
+const axios = require('axios')
 const { stringify } = require('querystring')
 
 module.exports = async options => {
@@ -30,17 +30,11 @@ module.exports = async options => {
     throw Error('Missing required input: options.credentials.client.client_secret')
   }
 
-  const { url, credentials } = options
-
-  const httpOptions = {
-    uri: url + '?' + stringify(credentials.client),
-    method: 'POST',
-    json: true,
-    form: credentials.auth
-  }
+  const url = options.url + '?' + stringify(options.credentials.client)
+  const payload = stringify(options.credentials.auth)
 
   try {
-    const data = await rp(httpOptions)
+    const { data } = await axios.post(url, payload)
     return data
   } catch (error) {
     throw error
