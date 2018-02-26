@@ -41,7 +41,7 @@
   "homepage": "https://github.com/telemark/fint-get-token#readme",
   "dependencies": {
     "args": "3.0.8",
-    "axios": "0.17.1"
+    "axios": "0.18.0"
   },
   "devDependencies": {
     "ava": "0.25.0",
