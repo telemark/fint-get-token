@@ -15,7 +15,8 @@
     "test-offline": "standard && ava",
     "coverage": "nyc ava",
     "coveralls": "nyc ava && nyc report --reporter=lcov && cat coverage/lcov.info | coveralls",
-    "standard-fix": "standard --fix"
+    "standard-fix": "standard --fix",
+    "refresh": "rm -rf node_modules && rm package-lock.json && npm install"
   },
   "keywords": [],
   "author": {
@@ -39,6 +40,9 @@
     "url": "https://github.com/telemark/fint-get-token/issues"
   },
   "homepage": "https://github.com/telemark/fint-get-token#readme",
+  "engines": {
+    "node": ">=8.11.1"
+  },
   "dependencies": {
     "args": "4.0.0",
     "axios": "0.18.0"
