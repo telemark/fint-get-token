@@ -35,6 +35,6 @@ test('it errors with wrong username', async t => {
       }
     }
   }
-  const { response } = await t.throws(getToken(options))
+  const { response } = await t.throwsAsync(getToken(options))
   t.is(response.data.error, 'invalid_grant', 'Errors as expected')
 })
