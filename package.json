@@ -41,7 +41,7 @@
   },
   "homepage": "https://github.com/telemark/fint-get-token#readme",
   "engines": {
-    "node": ">=8.11.1"
+    "node": ">=8.15.0"
   },
   "dependencies": {
     "args": "5.0.0",
