@@ -1,7 +1,6 @@
 [![Build Status](https://travis-ci.org/telemark/fint-get-token.svg?branch=master)](https://travis-ci.org/telemark/fint-get-token)
 [![Coverage Status](https://coveralls.io/repos/telemark/fint-get-token/badge.svg?branch=master&service=github)](https://coveralls.io/github/telemark/fint-get-token?branch=master)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
-[![Greenkeeper badge](https://badges.greenkeeper.io/telemark/fint-get-token.svg)](https://greenkeeper.io/)
 
 # fint-get-token
 
@@ -109,5 +108,3 @@ Requires use of [fint-get-data]()
 ## License
 
 [MIT](LICENSE)
-
-![Robohash image of fint-get-token](https://robots.kebabstudios.party/fint-get-token.png "Robohash image of fint-get-token")
