@@ -44,7 +44,7 @@
     "node": ">=8.15.0"
   },
   "dependencies": {
-    "args": "5.0.0",
+    "args": "5.0.1",
     "axios": "0.18.0"
   },
   "devDependencies": {
